@@ -1,0 +1,19 @@
+{
+  "name": "fips-rsassa-pkcs1-15-sha1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js",
+    "dockerTest": "docker build -t node-sign-fips . && docker run node-sign-fips",
+    "nodemon": "nodemon test.js"
+  },
+  "author": "lomilar",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "pem-jwk": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
