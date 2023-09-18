@@ -60,10 +60,10 @@ let verify256 = async ()=>{
     console.log(signature);
     console.log("Verifying using RSASSA-PKCS1-v1_5 and SHA-256, 2048 bit public key.")
     console.log(await verify256());
-    signature = null;
-    console.log("Signing using RSASSA-PKCS1-v1_5 and SHA-1, 2048 bit private key.")
-    await sign();
-    console.log(signature);
-    console.log("Verifying using RSASSA-PKCS1-v1_5 and SHA-1, 2048 bit public key.")
-    console.log(await verify());
+    // signature = null;
+    // console.log("Signing using RSASSA-PKCS1-v1_5 and SHA-1, 2048 bit private key.")
+    // await sign();
+    // console.log(signature);
+    // console.log("Verifying using RSASSA-PKCS1-v1_5 and SHA-1, 2048 bit public key.")
+    // console.log(await verify());
 })();

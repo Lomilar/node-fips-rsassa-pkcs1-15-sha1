@@ -1,5 +1,16 @@
 This project is intended to reproduce a bug in Node 18 when compiled with OpenSSL 3.0.3 and FIPS extensions.
 
+Update 09/18/2023:
+Per https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf 
+```
+32. In Section 5.6.1, the security-strength discussion has been revised, and a reference to SP
+800-158 has been inserted.
+...
+Table 3 and the following text have been revised to clearly indicate that SHA-1 is no longer
+approved for generating digital signatures. The SHA-3 hash functions are now included in
+the table. A note has been added to the header for HMAC.
+```
+
 When attempting to cryptographically sign a message using `{name:"RSASSA-PKCS1-v1_5",hash:"SHA-1"}`:
 
 The following error occurs:
